@@ -5,7 +5,7 @@ public class CarController {
     @Autowired
     private CarService carService;
 
-    @GetMapping
+    @GetMapping("/list")
     public List<Car> listCars() {
         return carService.listAllCars();
     }
